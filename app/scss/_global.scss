@@ -1,0 +1,42 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    overflow-x: hidden;
+    font-family: "HelveticaNeueCyr-Roman", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $text;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.footer{
+    margin-top: auto;
+}

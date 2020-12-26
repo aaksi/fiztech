@@ -1,0 +1,58 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+
+
+
+.header{
+    
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 140px;
+    }
+}
+.menu{
+    &__list{
+    }
+    &__item{
+        display: inline-block;
+        font-size: 16px;
+        & + &{
+            margin-left: 46px;
+        }
+    }
+}
+.language{
+    
+    &__title{
+        font-size: 14px;
+    }
+    &__box{
+       display: flex;
+       align-items: center;
+
+       a + a{
+        margin-left: 10px;
+        }
+    }
+    &__link{
+        position: relative;
+        &--active::before{
+            content: "";
+            position: absolute;
+            background-color: $red;
+            width: 50px;
+            height: 2px;
+            left: 0;
+            bottom: -12px;
+        }
+    }
+    &__text{
+        width: 63px;
+        font-size: 14px;
+    }
+    
+}

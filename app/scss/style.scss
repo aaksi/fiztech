@@ -56,3 +56,39 @@
     }
     
 }
+// end header 
+// start top 
+.top{
+    min-height: 776px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title{
+        text-transform: uppercase;
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        margin-left: auto;
+        padding-top: 212px ;
+        font-weight: 700;
+        color: #fff;
+        font-size: 46px;
+        line-height: 60px;
+        max-width: 720px;
+        margin-bottom: 139px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn{
+        width: 264px;
+        height: 68px;
+        background-color: $red;
+        font-size: 16px;
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        color: #fff;
+        padding: 28px 0 24px;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+// end top 

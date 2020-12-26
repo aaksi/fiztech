@@ -29,11 +29,11 @@
     
     &__title{
         font-size: 14px;
+        padding-bottom: 8px;
     }
     &__box{
        display: flex;
        align-items: center;
-
        a + a{
         margin-left: 10px;
         }
@@ -92,3 +92,55 @@
     }
 }
 // end top 
+// start info 
+.info{
+    background-color: #efefef;
+    &__title{
+        padding-top: 127px;
+        margin-bottom: 115px;
+        
+    }
+    &__inner{
+        display: flex;
+        margin-bottom: 170px;
+    }
+    &__text{
+        max-width: 445px;
+        margin-right: 60px;
+        line-height: 26px;
+        p{
+            // margin-top: 0;
+            margin-bottom: 45px;
+        }
+        p + p{
+            max-width: 366px;
+        }
+    }
+    &__advantages{
+        
+    }
+    &__advantages-title{
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 26px;
+    }
+    &__advantages-list{
+        li{
+            margin-bottom: 10px;
+            padding-left: 44px;
+            line-height: 26px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url('../images/icon/checked.png');
+                width: 17px;
+                height: 17px;
+                left: 0;
+                top: 3px;
+            }
+        }
+    }
+}
+
+// end info 

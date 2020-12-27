@@ -346,3 +346,100 @@
     }
 }
 // end delivery
+// start documents 
+.documents{
+    margin-bottom: 125px;
+    &__title{
+        padding-top: 110px;
+        margin-bottom: 74px;
+    }
+    &__slider{
+        margin: 0 166px 40px;
+        position: relative;
+    }
+    &__slider-item{
+        max-width: 230px;
+        text-align: center;
+        min-height: 480px;
+        
+    }
+    &__slider-img{
+        width: 230px;
+        height: 323px;
+        position: relative;
+        margin-bottom: 40px;
+        padding: 16px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 261px;
+            height: 355px;
+            border: solid 1px #d4dbdf;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__slider-title{
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        font-weight: 700;
+        height: 83px;
+        width: 100%;
+        text-align: center;
+        margin-left: 10px;
+    }
+    &__slider-title{
+        
+    }
+    &__slider-dowm{
+        font-size: 16px;
+        color: $red;
+        text-decoration: underline;
+        
+    }
+    &__subtitle{
+        background-color: #f6f8f9;
+        text-align: center;
+        padding: 55px 0 50px;
+        font-size: 16px;
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        font-weight: 700;
+    }
+}
+.slider-btn{
+    font-size: 0;
+    background-color: $red;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+}
+.slick-prev{
+    left: -100px;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon/left-arrow_.png');
+        width: 10px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.slick-next{
+    right: -100px;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon/right-arrow.png');
+        width: 10px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+// end documents

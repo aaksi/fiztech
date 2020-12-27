@@ -1,5 +1,3 @@
-// const autoprefixer = require('autoprefixer');
-// const { watch } = require('gulp');
 let gulp         = require('gulp'),
     sass         = require('gulp-sass'),
     rename       = require('gulp-rename'),

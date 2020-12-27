@@ -557,3 +557,144 @@
     }
 }
 // end contacts 
+// start request 
+.request{
+    background-color: #f9f9f9;
+    &__inner{
+        padding-top: 70px;
+    }
+    &__title{
+        margin-bottom: 21px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        font-weight: 700;
+    }
+    &__subtitle{
+        font-size: 24px;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto 67px;
+    }
+    &__form{
+      display: block;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    &__form-btn{
+        background-color: $red;
+        text-align: center;
+        border: none;
+        color: #fff;
+        padding: 28px 60px 24px;
+        margin: 0 auto 120px;
+        display: block;
+    }
+}
+.form__group{
+    max-width: 340px;
+    display: inline-block;
+    label{
+        font-size: 14px;
+        color: rgba($color: $text, $alpha: 0.5);
+        margin-bottom: 13px;   
+    }
+    input{
+        margin: 13px 0 20px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        height: 74px;
+        font-size: 20px;
+        padding-left: 52px;
+        padding-right: 10px;
+        
+    }
+}
+.form__group--upload{
+    max-width: 340px;
+    display: inline-block;
+    label{
+        padding-left: 52px;
+        font-size: 16px;
+        color: $red;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+    input{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+}
+.form__group--textarea{
+    display: inline-block;
+    margin-bottom: 33px;
+    label{
+        font-size: 14px;
+        color: rgba($color: $text, $alpha: 0.5);   
+    }
+    textarea{
+        margin-top: 13px;
+        width: 720px;
+        
+    }
+
+}
+.form__group--input{
+    position: relative;
+    display: inline-block;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icon/user.png');
+        width: 21px;
+        height: 23px;
+        top: 45%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+    &.form__group--input-tel{
+        &::before{
+            background-image: url('../images/icon/phone.png');
+            width: 20px;
+            height: 20px;
+        }
+        
+    }
+    &.form__group--input-email{
+        &::before{
+            background-image: url('../images/icon/email.png');
+            width: 22px;
+            height: 15px;
+        }
+        
+    }
+    &.form__group--input-textarea{
+        textarea{
+            padding-left: 52px;
+            padding-right: 10px;
+            height: 73px;
+            border: none;
+            padding-top: 25px;
+        }
+        &::before{
+            background-image: url('../images/icon/chat.png');
+            width: 20px;
+            height: 20px;
+        }
+        
+    }
+    &.form__group--input-upload{
+        &::before{
+            background-image: url('../images/icon/upload.png');
+            width: 23px;
+            height: 21px;
+            top: -10px;
+        }
+    }
+}
+// end request 

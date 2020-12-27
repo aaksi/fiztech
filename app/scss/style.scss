@@ -443,3 +443,117 @@
     }
 }
 // end documents
+// start contacts 
+.contacts{
+    margin-bottom: 60px;
+    &__title{
+        margin-bottom: 100px;
+
+    }
+    &__item{
+        width: 360px;
+        border: solid 1px #d4dbdf;
+        margin: 0 15px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+    &__item-title{
+        background-color: $red;
+        color: #fff;
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 32px;
+        margin-bottom: 44px;
+    }
+    &__item-list{
+        margin-left: 71px;
+    }
+    &__item-link{
+        padding-left: 48px;
+        font-size: 16px;
+        color: $red;
+        margin-bottom: 25px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        a{
+            text-decoration: underline;
+        }
+        &.contacts__item-link--phone{
+            color: $text;
+            &::before{
+                content: '';
+                background-image: url('../images/icon/phone.png');
+                width: 20px;
+                height: 20px;
+                left: 4px;
+            }
+            a{
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+        &.contacts__item-link--mail{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/email.png');
+                width: 23px;
+                height: 16px;
+                left: 3px;
+            }
+        }
+        &.contacts__item-link--social-vb{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/viber.png');
+            }
+        }
+        &.contacts__item-link--social-wa{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/whatsapp.png');
+            }
+        }
+        &.contacts__item-link--social-tg{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/telegram.png');
+            }
+        }
+        &.contacts__item-link--pc{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/pc.png');
+                width: 23px;
+                height: 19px;
+                left: 1px;
+            }
+        }
+        &.contacts__item-link--social-inst{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/instagram.png');
+            }
+        }
+        &.contacts__item-link--social-yt{
+            &::before{
+                content: '';
+                background-image: url('../images/icon/youtube.png');
+            }
+        }
+    }
+}
+// end contacts 

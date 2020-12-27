@@ -278,3 +278,71 @@
     margin-bottom: 20px;
 }
 // end products 
+// start delivery 
+.delivery{
+    background-color: $red;
+    &__title{
+        color: #fff;
+        padding-top: 105px;
+        margin-bottom: 60px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+    &__item{
+        background-color: #fff;
+        width: 358px;
+        
+    }
+    &__item-img{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 56px 0 15px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__item-title{
+        font-family: "HelveticaNeueCyr-Bold", sans-serif;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 33px;
+        text-align: center;
+        margin-bottom: 40px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 251px;
+            height: 1px;
+            background-color: #d4dbdf;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__item-list{
+        line-height: 36px;
+        margin: 0 auto;
+        margin-bottom: 57px;
+        margin-left: 84px;
+        li{
+            padding-left: 40px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url('../images/icon/checked.png');
+                width: 17px;
+                height: 17px;
+                left: 0;
+                top: 9px;
+            }
+        }
+    }
+}
+// end delivery
